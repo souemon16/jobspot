@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobspot/presentation/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();
@@ -12,6 +13,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      theme: getApplicationTheme(),
+      home: Scaffold(
+        body: const Center(child: Text("Hello World")),
+      ),
+    );
   }
 }
