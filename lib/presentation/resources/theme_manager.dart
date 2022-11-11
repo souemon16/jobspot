@@ -56,7 +56,7 @@ ThemeData getApplicationTheme() {
       inputDecorationTheme: InputDecorationTheme(
           contentPadding: const EdgeInsets.all(AppPadding.p10),
           hintStyle:
-              getRegularStyle(color: ColorManager.primaryFont.withOpacity(60)),
+              getRegularStyle(color: ColorManager.primaryFont.withOpacity(0.6)),
           labelStyle: getRegularStyle(color: ColorManager.primaryFont),
           errorStyle: getRegularStyle(color: ColorManager.error),
           enabledBorder: const OutlineInputBorder(

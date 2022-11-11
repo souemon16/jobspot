@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jobspot/presentation/theme_manager.dart';
+import 'package:jobspot/presentation/resources/routes_manager.dart';
 
 import '../presentation/resources/theme_manager.dart';
 
@@ -16,10 +16,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
+      debugShowCheckedModeBanner: false,
       theme: getApplicationTheme(),
-      home: Scaffold(
-        body: const Center(child: Text("Hello World")),
-      ),
     );
   }
 }

@@ -34,6 +34,13 @@ TextStyle getHeading3Style(
   return _getTextStyle(fontFamily, fontSize, FontWeightManager.medium, color);
 }
 
+TextStyle getMediumStyle(
+    {fontFamily = FontConstants.fontFamily,
+    double fontSize = FontSize.s26,
+    required Color color}) {
+  return _getTextStyle(fontFamily, fontSize, FontWeightManager.medium, color);
+}
+
 TextStyle getRegularStyle(
     {fontFamily = FontConstants.fontFamily,
     double fontSize = FontSize.s12,
