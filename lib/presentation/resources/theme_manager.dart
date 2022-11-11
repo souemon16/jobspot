@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jobspot/presentation/color_manager.dart';
-import 'package:jobspot/presentation/style_manager.dart';
-import 'package:jobspot/presentation/value_manager.dart';
+
+import 'value_manager.dart';
+import 'color_manager.dart';
+import 'textstyle_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(

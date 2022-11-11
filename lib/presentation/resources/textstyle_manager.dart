@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jobspot/presentation/color_manager.dart';
+import 'color_manager.dart';
 
 import 'font_manager.dart';
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jobspot/presentation/theme_manager.dart';
 
+import '../presentation/resources/theme_manager.dart';
+
 class MyApp extends StatefulWidget {
   const MyApp._internal();
   static MyApp instance = const MyApp._internal();
