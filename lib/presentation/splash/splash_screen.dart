@@ -1,6 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+
 import 'package:jobspot/presentation/resources/assets_manager.dart';
 import 'package:jobspot/presentation/resources/color_manager.dart';
 import 'package:jobspot/presentation/resources/routes_manager.dart';
@@ -14,8 +14,8 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+// Splash Screen Timer
   Timer? _timer;
-
   _startDelay() {
     _timer = Timer(const Duration(seconds: 3), _goNext);
   }
@@ -23,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   _goNext() {
     Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
   }
+  // Splash Screen Timer
 
   @override
   void initState() {
