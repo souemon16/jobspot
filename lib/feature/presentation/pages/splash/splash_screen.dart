@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-import 'package:jobspot/presentation/resources/assets_manager.dart';
-import 'package:jobspot/presentation/resources/color_manager.dart';
-import 'package:jobspot/presentation/resources/routes_manager.dart';
-import 'package:jobspot/presentation/resources/textstyle_manager.dart';
+import 'package:jobspot/feature/presentation/resources/assets_manager.dart';
+import 'package:jobspot/feature/presentation/resources/color_manager.dart';
+import 'package:jobspot/feature/presentation/resources/routes_manager.dart';
+import 'package:jobspot/feature/presentation/resources/textstyle_manager.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

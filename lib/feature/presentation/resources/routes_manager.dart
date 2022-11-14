@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:jobspot/presentation/forgetPassword/forget_password_screen.dart';
-import 'package:jobspot/presentation/home/home_screen.dart';
-import 'package:jobspot/presentation/login/login_screen.dart';
-import 'package:jobspot/presentation/onboarding/onboarding_screen.dart';
-import 'package:jobspot/presentation/resources/strings_manager.dart';
-import 'package:jobspot/presentation/signup/signup_screen.dart';
-import 'package:jobspot/presentation/splash/splash_screen.dart';
+import 'package:jobspot/feature/presentation/pages/forgetPassword/forget_password_screen.dart';
+import 'package:jobspot/feature/presentation/pages/home/home_screen.dart';
+import 'package:jobspot/feature/presentation/pages/login/login_screen.dart';
+import 'package:jobspot/feature/presentation/pages/onboarding/onboarding_screen.dart';
+import 'package:jobspot/feature/presentation/resources/strings_manager.dart';
+import 'package:jobspot/feature/presentation/pages/signup/signup_screen.dart';
+import 'package:jobspot/feature/presentation/pages/splash/splash_screen.dart';
 
 class Routes {
   static const String splashRoute = '/';

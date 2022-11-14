@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jobspot/presentation/resources/routes_manager.dart';
+import 'package:jobspot/feature/presentation/resources/routes_manager.dart';
 
-import '../presentation/resources/theme_manager.dart';
+import '../feature/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();

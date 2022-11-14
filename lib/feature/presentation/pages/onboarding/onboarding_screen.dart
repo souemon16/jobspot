@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:jobspot/presentation/resources/assets_manager.dart';
-import 'package:jobspot/presentation/resources/color_manager.dart';
-import 'package:jobspot/presentation/resources/strings_manager.dart';
-import 'package:jobspot/presentation/resources/textstyle_manager.dart';
-import 'package:jobspot/presentation/resources/value_manager.dart';
+import 'package:jobspot/feature/presentation/resources/assets_manager.dart';
+import 'package:jobspot/feature/presentation/resources/color_manager.dart';
+import 'package:jobspot/feature/presentation/resources/strings_manager.dart';
+import 'package:jobspot/feature/presentation/resources/textstyle_manager.dart';
+import 'package:jobspot/feature/presentation/resources/value_manager.dart';
 
-import '../resources/routes_manager.dart';
+import '../../resources/routes_manager.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
