@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>788510447528-f257o5kea6oa5cjot13p78m4vpninjj8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.788510447528-f257o5kea6oa5cjot13p78m4vpninjj8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkAhvGzkKHnb4894qzDMot-fSf1SMrwG8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>788510447528</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sourav.jobspot</string>
+	<key>PROJECT_ID</key>
+	<string>jobspot-sourav</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jobspot-sourav.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:788510447528:ios:79791d801b83999757ef9d</string>
+</dict>
+</plist>

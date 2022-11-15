@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "788510447528",
+    "project_id": "jobspot-sourav",
+    "storage_bucket": "jobspot-sourav.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788510447528:android:c76e10a93781212257ef9d",
+        "android_client_info": {
+          "package_name": "com.sourav.jobspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788510447528-h2jf2eaavj90fkrg90agv4h1rusdand0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav.jobspot",
+            "certificate_hash": "3ae089ad89f72f9fe79aedfc41ca03d8d8086352"
+          }
+        },
+        {
+          "client_id": "788510447528-0rjqv36290fj851okq99t99d4neeqo8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLKAJw-3NIAAX02f-sLUB6l4sRavWOSuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788510447528-0rjqv36290fj851okq99t99d4neeqo8h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "788510447528-f257o5kea6oa5cjot13p78m4vpninjj8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sourav.jobspot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
