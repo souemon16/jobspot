@@ -5,6 +5,7 @@ class ColorManager {
   static Color primaryLight = HexColor.fromHex("D6CDFE");
   static Color orangish = HexColor.fromHex("FCA34D");
   static Color sky = HexColor.fromHex("AFECFE");
+  static Color inputColor = HexColor.fromHex("E6E1FF");
 
   static Color white = HexColor.fromHex("FFFFFF");
   static Color black = HexColor.fromHex("000000");

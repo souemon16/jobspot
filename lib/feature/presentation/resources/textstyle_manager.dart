@@ -50,3 +50,11 @@ TextStyle getRegularStyle(
     required Color color}) {
   return _getTextStyle(fontFamily, fontSize, fontWeight, color);
 }
+
+TextStyle getSmallStyle(
+    {fontFamily = FontConstants.fontFamily,
+    double fontSize = FontSize.s10,
+    FontWeight fontWeight = FontWeight.w400,
+    required Color color}) {
+  return _getTextStyle(fontFamily, fontSize, fontWeight, color);
+}

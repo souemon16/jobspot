@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:jobspot/feature/presentation/pages/forgetPassword/forget_password_screen.dart';
-import 'package:jobspot/feature/presentation/pages/home/home_screen.dart';
-import 'package:jobspot/feature/presentation/pages/login/login_screen.dart';
-import 'package:jobspot/feature/presentation/pages/onboarding/onboarding_screen.dart';
-import 'package:jobspot/feature/presentation/resources/strings_manager.dart';
-import 'package:jobspot/feature/presentation/pages/signup/signup_screen.dart';
-import 'package:jobspot/feature/presentation/pages/splash/splash_screen.dart';
+import '../pages/forgetPassword/forget_password_screen.dart';
+import '../pages/home/home_screen.dart';
+import '../pages/signin/signin_screen.dart';
+import '../pages/onboarding/onboarding_screen.dart';
+import '../pages/signup/signup_screen.dart';
+import '../pages/splash/splash_screen.dart';
+import 'strings_manager.dart';
 
 class Routes {
   static const String splashRoute = '/';
@@ -25,7 +25,7 @@ class RouteGenerator {
       case Routes.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case Routes.loginRoute:
-        return MaterialPageRoute(builder: (_) => const LoginScreen());
+        return MaterialPageRoute(builder: (_) => const SignInScreen());
       case Routes.signupRoute:
         return MaterialPageRoute(builder: (_) => const SignupScreen());
       case Routes.forgetPasswordRoute:

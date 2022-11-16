@@ -50,7 +50,8 @@ ThemeData getApplicationTheme() {
           headline1: getHeading1Style(color: ColorManager.black),
           headline2: getHeading2Style(color: ColorManager.primaryFont),
           headline3: getHeading3Style(color: ColorManager.title),
-          bodyText1: getRegularStyle(color: ColorManager.secondaryFont)),
+          bodyText1: getRegularStyle(color: ColorManager.secondaryFont),
+          bodyText2: getSmallStyle(color: ColorManager.secondaryFont)),
 
       // Input Decoration Theme
       inputDecorationTheme: InputDecorationTheme(

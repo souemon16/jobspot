@@ -6,6 +6,7 @@ import 'package:jobspot/feature/presentation/resources/color_manager.dart';
 import 'package:jobspot/feature/presentation/resources/routes_manager.dart';
 import 'package:jobspot/feature/presentation/resources/textstyle_manager.dart';
 
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -21,6 +22,17 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _goNext() {
+    // BlocBuilder<AuthCubit, AuthState>(
+    //   builder: (context, state) {
+    //     if (AuthState is Authenticated) {
+    //       Navigator.pushReplacementNamed(context, Routes.homeRoute);
+    //     }
+    //     if (AuthState is UnAuthenticated) {
+    //       Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
+    //     }
+    //     return const CircularProgressIndicator();
+    //   },
+    // );
     Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
   }
   // Splash Screen Timer
