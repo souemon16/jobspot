@@ -1,15 +1,23 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:jobspot/feature/presentation/resources/assets_manager.dart';
-import 'package:jobspot/feature/presentation/resources/color_manager.dart';
+import 'package:jobspot/feature/presentation/resources/routes_manager.dart';
 
+import '../../resources/assets_manager.dart';
+import '../../resources/color_manager.dart';
 import '../../resources/value_manager.dart';
+import '../../widgets/custom_elevated_button.dart';
+import '../../widgets/custom_text_form_field.dart';
+import '../../widgets/text_field_label.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    void _onNext() {
+      Navigator.pushReplacementNamed(context, Routes.signupRoute);
+    }
+
     bool? checkedValue = false;
 
     return Scaffold(
@@ -36,56 +44,12 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
             Column(
-              children: [
-                SizedBox(
-                  width: double.infinity,
-                  child: Text(
-                    "Email",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        ?.copyWith(fontWeight: FontWeight.w700),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  autofocus: false,
-                  decoration: InputDecoration(
-                    hintText: "souemon16@gmail.com",
-                    fillColor: ColorManager.inputColor,
-                    filled: true,
-                    enabledBorder: OutlineInputBorder(
-                        borderSide:
-                            const BorderSide(width: 0, color: Colors.white),
-                        borderRadius: BorderRadius.circular(10)),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                SizedBox(
-                  width: double.infinity,
-                  child: Text(
-                    "Password",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        ?.copyWith(fontWeight: FontWeight.w700),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                TextFormField(
-                  keyboardType: TextInputType.visiblePassword,
-                  autofocus: false,
-                  decoration: InputDecoration(
-                    hintText: "******",
-                    fillColor: ColorManager.inputColor,
-                    filled: true,
-                    enabledBorder: OutlineInputBorder(
-                        borderSide:
-                            const BorderSide(width: 0, color: Colors.white),
-                        borderRadius: BorderRadius.circular(10)),
-                  ),
-                ),
+              children: const [
+                TextFieldLabel(fieldName: "Email"),
+                CustomTextFormField(hintText: "souemon16@gmail.com"),
+                SizedBox(height: 20),
+                TextFieldLabel(fieldName: "Password"),
+                CustomTextFormField(hintText: "*******"),
               ],
             ),
             Row(
@@ -112,37 +76,35 @@ class SignInScreen extends StatelessWidget {
             ),
 
             // -------------BUTTONS ---------------
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(minimumSize: const Size(260, 60)),
-              child: Text("LOGIN",
+            CustomElevatedButton(
+              buttonChild: Text("LOGIN",
                   style: Theme.of(context)
                       .textTheme
                       .headline3
                       ?.copyWith(color: ColorManager.white)),
+              buttonStyle:
+                  ElevatedButton.styleFrom(minimumSize: const Size(260, 60)),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(260, 60),
-                  backgroundColor: ColorManager.primaryLight),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Image(
-                      image: AssetImage(ImageAssets.googleLogo), width: 30),
-                  Text(
-                    " SIGN IN  WITH GOOGLE",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline3
-                        ?.copyWith(color: ColorManager.primaryFont),
-                  )
-                ],
-              ),
-            ),
-            const SizedBox(height: 20),
+            CustomElevatedButton(
+                buttonChild: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Image(
+                        image: AssetImage(ImageAssets.googleLogo), width: 30),
+                    Text(
+                      " SIGN IN  WITH GOOGLE",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline3
+                          ?.copyWith(color: ColorManager.primaryFont),
+                    )
+                  ],
+                ),
+                buttonStyle: ElevatedButton.styleFrom(
+                    minimumSize: const Size(260, 60),
+                    backgroundColor: ColorManager.primaryLight)),
+            const SizedBox(height: 30),
 
             // ---------FOOTER TEXT----------
             RichText(
@@ -150,12 +112,20 @@ class SignInScreen extends StatelessWidget {
                 text: TextSpan(children: [
                   TextSpan(
                       text: "You don't have any account yet?",
-                      style: Theme.of(context).textTheme.bodyText1),
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline3
+                          ?.copyWith(fontWeight: FontWeight.w400)),
                   TextSpan(
                       text: " Signup",
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.headline3?.copyWith(
                           color: ColorManager.orangish,
-                          decoration: TextDecoration.underline))
+                          fontWeight: FontWeight.w400,
+                          decoration: TextDecoration.underline),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          _onNext();
+                        })
                 ])),
           ],
         ),
