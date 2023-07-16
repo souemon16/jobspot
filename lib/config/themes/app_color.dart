@@ -5,7 +5,8 @@ class AppColor{
   static Color secondaryColor = const Color(0xFFD6CDFE);
   static Color orangishColor = const Color(0xFFFF9228);
 
-  static Color white = const Color(0xFFFFFFFF);
+  static Color pureWhite = const Color(0xFFFFFFFF);
+  static Color pureBlack = const Color(0xFF000000);
   static Color error = const Color(0xFFFC4646);
 
   static Color headingFontColor = const Color(0xFF0D0140);
