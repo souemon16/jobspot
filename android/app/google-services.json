@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1040008832715",
+    "project_id": "jobspot-16",
+    "storage_bucket": "jobspot-16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040008832715:android:0e4718399b4a3a7c499d4e",
+        "android_client_info": {
+          "package_name": "com.example.jobspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040008832715-clic7k6od2rmsa2mu3u5l8pasr18n7rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobspot",
+            "certificate_hash": "3ae089ad89f72f9fe79aedfc41ca03d8d8086352"
+          }
+        },
+        {
+          "client_id": "1040008832715-1jtg2kgb4ronv3l1am5v8is6756vvogi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW8kfscG3qAzGOJaVW90u59WLwM35lDvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040008832715-1jtg2kgb4ronv3l1am5v8is6756vvogi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1040008832715-jtepohahj3ib6vran3lsepibshopkrmm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jobspot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

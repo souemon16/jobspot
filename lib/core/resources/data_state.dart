@@ -1,25 +1,17 @@
-enum ResponseState { EMPTY, LOADING, COMPLETE, ERROR }
+import 'package:dio/dio.dart';
 
-class ViewState<T> {
-  ResponseState state;
-  T? data;
-  String? exception;
+abstract class DataState<T> {
+  final T? data;
+  final DioException? error;
 
-  ViewState({required this.state, this.data, this.exception});
+  const DataState({this.data, this.error});
+}
 
-  static ViewState<T> empty<T>() {
-    return ViewState(state: ResponseState.EMPTY);
-  }
+class DataSuccess<T> extends DataState<T> {
+  const DataSuccess (T data) : super(data: data);
+}
 
-  static ViewState<T> loading<T>() {
-    return ViewState(state: ResponseState.LOADING);
-  }
 
-  static ViewState<T> complete<T>(T data) {
-    return ViewState(state: ResponseState.COMPLETE, data: data);
-  }
-
-  static ViewState<T> error<T>(String exception) {
-    return ViewState(state: ResponseState.ERROR, exception: exception);
-  }
+class DataFailed<T> extends DataState<T> {
+  const DataFailed (DioException error) : super(error: error);
 }
