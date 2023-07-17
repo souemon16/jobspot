@@ -1,7 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:jobspot/config/themes/app_theme.dart';
-import 'package:jobspot/features/user/presentation/pages/on_boarding_page.dart';
+import 'package:jobspot/features/user/presentation/pages/check_your_email_page.dart';
+
 
 import 'firebase_options.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: OnboardingPage()
+      home: const CheckYourEmailPage()
     );
   }
 }
