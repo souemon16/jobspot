@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jobspot/config/themes/app_color.dart';
+import 'package:jobspot/core/constants/image_const.dart';
+import 'package:jobspot/core/constants/route_const.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -16,9 +18,9 @@ class OnboardingPage extends StatelessWidget {
             Align(
                 alignment: Alignment.topRight,
                 child:
-                    Image.asset("assets/images/onboarding/branding_logo.png")),
+                    Image.asset(brandingLogo)),
             const SizedBox(height: 40),
-            Image.asset('assets/images/onboarding/onboarding.png',),
+            Image.asset(onboardingImage),
             const SizedBox(height: 40),
             RichText(
               text: TextSpan(
@@ -46,7 +48,9 @@ class OnboardingPage extends StatelessWidget {
             Align(
               alignment: Alignment.bottomRight,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, RouteConst.loginPage);
+                },
                 style: ElevatedButton.styleFrom(
                     fixedSize: const Size(60, 60),
                     shape: RoundedRectangleBorder(

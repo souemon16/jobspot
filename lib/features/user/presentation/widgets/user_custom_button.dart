@@ -5,18 +5,20 @@ class UserCustomButton extends StatelessWidget {
   final Color? fontcolor;
   final Widget buttonInterface;
   final Size? buttonSize;
+  final void Function() ontap;
   const UserCustomButton({
     Key? key,
     this.backgroundColor,
+    this.fontcolor,
     required this.buttonInterface,
     this.buttonSize,
-    this.fontcolor,
+    required this.ontap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: ontap,
       style: ElevatedButton.styleFrom(
           fixedSize: buttonSize,
           backgroundColor: backgroundColor,

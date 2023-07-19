@@ -6,7 +6,7 @@ class GetCurrentUidUseCase implements UseCase {
 
   GetCurrentUidUseCase({required this.userRepository});
   @override
-  Future<void> call({params}) {
+  Future<String> call({ params}) {
     return userRepository.getCurrentUid();
   } 
 }
